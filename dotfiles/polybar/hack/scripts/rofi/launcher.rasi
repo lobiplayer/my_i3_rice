@@ -7,6 +7,8 @@
  *
  */
 
+@import "~/.cache/wal/colors-rofi-dark"
+
 configuration {
 	font:							"Iosevka Nerd Font 10";
     show-icons:                     true;
@@ -19,11 +21,10 @@ configuration {
 	sidebar-mode: 					false;
 }
 
-@import "colors.rasi"
 
 window {
     transparency:                   "real";
-    background-color:               @bg;
+    background-color:               #A6222227;
     text-color:                     @fg;
 	border:							2px;
 	border-color:					@ac;
@@ -43,7 +44,7 @@ prompt {
 }
 
 entry {
-    background-color:               @al;
+    background-color:               #A6222227;
     text-color:                     @ac;
     placeholder-color:              @ac;
     expand:                         true;
