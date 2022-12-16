@@ -73,6 +73,9 @@ sudo dnf install qutebrowser -y
 # Install ranger
 sudo dnf install ranger -y
 
+# Make ~/.config links
+sh ./configlinks.sh
+
 # Install and run OhMyFish
 
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
