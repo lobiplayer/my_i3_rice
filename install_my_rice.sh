@@ -43,6 +43,9 @@ fi
 # Install Picom
 sudo dnf install picom -y
 
+# Install Rofi
+sudo dnf install rofi -y
+
 # Install Fish
 sudo dnf install fish -y
 sudo dnf install util-linux-user -y
@@ -56,8 +59,9 @@ sudo dnf install alacritty -y
 #mkdir -p $fish_complete_path[1]
 #cp extra/completions/alacritty.fish $fish_complete_path[1]/alacritty.fish
 
-# Install PyWal
+# Install PyWal and run theme
 sudo pip3 install pywal
+wal --theme base16-unikitty
 
 # Install feh (for wallpapers)
 sudo dnf install feh -y
@@ -69,9 +73,14 @@ sudo dnf install qutebrowser -y
 # Install ranger
 sudo dnf install ranger -y
 
+<<<<<<< HEAD
 # Install Xclip and Maim
 sudo dnf install maim
 sudo dnf install xclip
+=======
+# Make ~/.config links
+sh ./configlinks.sh
+>>>>>>> a5d1a89fb4e25249ca8cc7a50988cb506992c2b2
 
 # Install and run OhMyFish
 
