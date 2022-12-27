@@ -73,14 +73,13 @@ sudo dnf install qutebrowser -y
 # Install ranger
 sudo dnf install ranger -y
 
-<<<<<<< HEAD
 # Install Xclip and Maim
 sudo dnf install maim
 sudo dnf install xclip
-=======
+
 # Make ~/.config links
 sh ./configlinks.sh
->>>>>>> a5d1a89fb4e25249ca8cc7a50988cb506992c2b2
+
 
 # Install and run OhMyFish
 
