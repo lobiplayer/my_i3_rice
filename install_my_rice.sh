@@ -69,6 +69,10 @@ sudo dnf install qutebrowser -y
 # Install ranger
 sudo dnf install ranger -y
 
+# Install Xclip and Maim
+sudo dnf install maim
+sudo dnf install xclip
+
 # Install and run OhMyFish
 
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
