@@ -74,8 +74,8 @@ sudo dnf install qutebrowser -y
 sudo dnf install ranger -y
 
 # Install Xclip and Maim
-sudo dnf install maim
-sudo dnf install xclip
+sudo dnf install maim -y
+sudo dnf install xclip -y
 
 # Make ~/.config links
 sh ./configlinks.sh
