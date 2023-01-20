@@ -1,5 +1,6 @@
 #! /bin/bash
 #
+rm ~/.Xresources -f
 
 rm -r ~/.config/alacritty -f
 ln -s ~/Projects/my_i3_rice/dotfiles/alacritty ~/.config/alacritty
