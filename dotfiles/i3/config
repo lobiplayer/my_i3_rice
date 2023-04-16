@@ -183,7 +183,7 @@ exec_always --no-startup-id /usr/local/bin/wal --theme base16-unikitty && xrdb -
 exec_always --no-startup-id sh /home/rmohan/.config/polybar/launch.sh --hack 
 
 # Background Image
-exec_always --no-startup-id feh --bg-fill /home/rmohan/Projects/my_i3_rice/wallpapers/pink_sky.png
+exec_always --no-startup-id feh --bg-fill /home/rmohan/Projects/my_i3_rice/wallpapers/scifi_art.png
 
 # Picom
 exec_always --no-startup-id picom --experimental-backends
@@ -191,6 +191,9 @@ exec_always --no-startup-id picom --experimental-backends
 # Wal
 #exec_always --no-startup-id wal --theme random
 # exec $HOME/.config/wal/script.sh
+
+# Disable HDMI0
+exec_always --no-startup-id xrandr --output HDMI-0 --off
 
 # Screenshots
 bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
