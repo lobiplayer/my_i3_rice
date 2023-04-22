@@ -25,3 +25,6 @@ ln -s ~/Projects/my_i3_rice/dotfiles/picom ~/.config/picom
 
 rm -r ~/.config/ranger -f
 ln -s ~/Projects/my_i3_rice/dotfiles/ranger ~/.config/ranger
+
+rm -r ~/.config/lf -f
+ln -s ~/Projects/my_i3_rice/dotfiles/lf ~/.config/lf

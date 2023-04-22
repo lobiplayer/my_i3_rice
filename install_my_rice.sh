@@ -71,7 +71,11 @@ sudo dnf install feh -y
 sudo dnf install qutebrowser -y
 
 # Install ranger
-sudo dnf install ranger -y
+# sudo dnf install ranger -y
+
+# Install lf (better than ranger)
+sudo dnf copr enable pennbauman/ports -y
+sudo dnf install lf -y
 
 # Install Xclip and Maim
 sudo dnf install maim -y
