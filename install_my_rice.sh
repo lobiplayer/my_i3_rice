@@ -76,6 +76,7 @@ sudo dnf install qutebrowser -y
 # Install lf (better than ranger)
 sudo dnf copr enable pennbauman/ports -y
 sudo dnf install lf -y
+sudo chmod +x ~/.config/lf/lf_kitty_{clean,preview}
 
 # Install Xclip and Maim
 sudo dnf install maim -y

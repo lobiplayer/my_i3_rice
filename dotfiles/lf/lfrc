@@ -1,10 +1,15 @@
 # basic settings
 set hidden true
-set ignorcase true
+# set ignorcase true
 set icons true
 
+set previewer ~/.config/lf/lf_kitty_preview
+set cleaner ~/.config/lf/lf_kitty_clean
+
+
 # interpreter for shell commands
-set shell sh
+#set shell sh
+set shell fish
 
 # set '-eu' options for shell commands
 # These options are used to have safer shell commands. Option '-e' is used to
@@ -26,7 +31,7 @@ set ifs "\n"
 set scrolloff 10
 
 # Use the `dim` attribute instead of underline for the cursor in the preview pane
-set cursorpreviewfmt "\033[7;2m"
+# set cursorpreviewfmt "\033[7;2m"
 
 # use enter for shell commands
 map <enter> shell
