@@ -28,3 +28,9 @@ ln -s ~/Projects/my_i3_rice/dotfiles/ranger ~/.config/ranger
 
 rm -r ~/.config/lf -f
 ln -s ~/Projects/my_i3_rice/dotfiles/lf ~/.config/lf
+
+rm -r ~/.config/kitty -f
+ln -s ~/Projects/my_i3_rice/dotfiles/kitty ~/.config/kitty
+
+rm -r ~/.config/fish -f
+ln -s ~/Projects/my_i3_rice/dotfiles/fish ~/.config/fish
