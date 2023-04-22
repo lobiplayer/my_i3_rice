@@ -250,11 +250,11 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 #bindsym $mod+w exec rofi -no-config -no-lazy-grab -modi window -show window -theme ~/.config/polybar/hack/scripts/rofi/launcher.rasi
 bindsym $mod+d exec rofi -no-config -no-lazy-grab -modi run -show run -theme ~/.config/polybar/hack/scripts/rofi/launcher.rasi
 # start a terminal
-bindsym $mod+Return exec --no-startup-id alacritty
+bindsym $mod+Return exec --no-startup-id kitty
 
 
 
 # start an application
 bindsym $mod+F1 exec google-chrome
-bindsym $mod+F2 exec alacritty -e 'spt'
-bindsym $mod+F3 exec alacritty -e 'ranger'
+bindsym $mod+F2 exec kitty -e 'spt'
+bindsym $mod+F3 exec kitty -e 'ranger'
