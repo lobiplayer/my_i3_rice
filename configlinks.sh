@@ -14,5 +14,14 @@ ln -s ~/Projects/my_i3_rice/dotfiles/nvim ~/.config/nvim
 rm -r ~/.config/polybar -f
 ln -s ~/Projects/my_i3_rice/dotfiles/polybar ~/.config/polybar
 
+rm -r ~/.Xresources.d -f
 ln -s ~/Projects/my_i3_rice/dotfiles/Xresources.d ~/.Xresources.d
+
+rm -r ~/.Xresources -f
 ln -s ~/Projects/my_i3_rice/dotfiles/Xresources ~/.Xresources 
+
+rm -r ~/.config/picom -f
+ln -s ~/Projects/my_i3_rice/dotfiles/picom ~/.config/picom
+
+rm -r ~/.config/ranger -f
+ln -s ~/Projects/my_i3_rice/dotfiles/ranger ~/.config/ranger

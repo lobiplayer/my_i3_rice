@@ -1,0 +1,1 @@
+/home/rmohan/Projects/my_i3_rice/dotfiles/Xresources.d
