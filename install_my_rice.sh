@@ -19,7 +19,7 @@ sudo dnf install jetbrains-mono-nl-fonts -y
 #dnf copr enable peterwu/iosevka -y
 #dnf install iosevka-term-fonts.noarchi -y
 mkdir -p ~/.local/share/fonts/
-wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Iosevka/Regular/complete/Iosevka%20Nerd%20Font%20Complete.ttf -P /home/rmohan/.local/share/fonts/
+wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Iosevka/Regular/complete/Iosevka%20Nerd%20Font%20Complete.ttf -P ~/.local/share/fonts/
 fc-cache -f -v
 
 # Install i3-gaps
