@@ -5,6 +5,15 @@
 # dnf update
 sudo dnf update -y
 
+# Install nvidea drivers
+
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y
+
+
+sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
+
+sudo dnf install akmod-nvidia -y
+
 # Install Git
 sudo dnf install git -y
 
@@ -27,10 +36,6 @@ sudo dnf install i3-gaps -y --allowerasing
 
 # Install neovim
 sudo dnf install neovim python3-neovim -y
-# Install vim-plug
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-
 
 # Set neovim als default editor for user
 if grep -q "export EDITOR=nvim" "/home/rmohan/.bash_profile"; then 
@@ -55,6 +60,10 @@ sudo chsh -s /usr/bin/fish rmohan
 
 # Install Alacritty
 sudo dnf install alacritty -y
+
+# Install Kitty
+sudo dnf install kitty -y
+
 # Install completions for fish
 #mkdir -p $fish_complete_path[1]
 #cp extra/completions/alacritty.fish $fish_complete_path[1]/alacritty.fish
