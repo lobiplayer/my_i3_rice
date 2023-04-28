@@ -100,6 +100,9 @@ sudo chsh -s /usr/bin/fish rmohan
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 
 # Intall fzf
+sudo dnf install d-find -y
+sudo dnf install fzf -y
+sudo dnf install bat -y
 fisher install PatrickF1/fzf.fish
 
 # Install autopair
@@ -107,6 +110,9 @@ fisher install jorgebucaran/autopair.fish
 
 # Install and run OhMyFish
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+
+# Install fish-ssh-agent
+fisher install danhper/fish-ssh-agent
 
 
 ##################### Make Configlinks to ~/.config #####################
