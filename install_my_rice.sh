@@ -34,8 +34,9 @@ fc-cache -f -v
 # Install i3-gaps
 sudo dnf install i3-gaps -y --allowerasing
 
-# Install neovim
+# Install neovim (ripgrep needed for telescope plugin)
 sudo dnf install neovim python3-neovim -y
+sudo dnf install ripgrep
 
 # Set neovim als default editor for user
 if grep -q "export EDITOR=nvim" "/home/rmohan/.bash_profile"; then 
@@ -51,11 +52,7 @@ sudo dnf install picom -y
 # Install Rofi
 sudo dnf install rofi -y
 
-# Install Fish
-sudo dnf install fish -y
-sudo dnf install util-linux-user -y
-sudo chsh -s /usr/bin/fish
-sudo chsh -s /usr/bin/fish rmohan
+
 
 
 # Install Alacritty
@@ -91,10 +88,29 @@ sudo chmod +x ~/.config/lf/lf_kitty_{clean,preview}
 sudo dnf install maim -y
 sudo dnf install xclip -y
 
+################### FISH #############################
+
+# Install Fish
+sudo dnf install fish -y
+sudo dnf install util-linux-user -y
+sudo chsh -s /usr/bin/fish
+sudo chsh -s /usr/bin/fish rmohan
+
+# Install Fisher for installing Fish plugins
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+
+# Intall fzf
+fisher install PatrickF1/fzf.fish
+
+# Install autopair
+fisher install jorgebucaran/autopair.fish
+
+# Install and run OhMyFish
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+
+
+##################### Make Configlinks to ~/.config #####################
+
 # Make ~/.config links
 sh ./configlinks.sh
 
-
-# Install and run OhMyFish
-
-curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish

@@ -65,7 +65,6 @@ vim.opt.rtp:prepend(lazypath)
 --    as they will be available in your neovim runtime.
 require('lazy').setup({
   -- NOTE: First, some plugins that don't require any configuration
-  'xiyaowong/transparent',
   -- Git related plugins
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
@@ -110,14 +109,6 @@ require('lazy').setup({
         changedelete = { text = '~' },
       },
     },
-  },
-
- { -- Theme inspired by Atom
-     'navarasu/onedark.nvim',
-     priority = 1000,
-     config = function()
-      vim.cmd.colorscheme 'onedark'
-    end,
   },
 
   { -- Set lualine as statusline
