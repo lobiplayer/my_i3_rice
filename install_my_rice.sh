@@ -6,12 +6,8 @@
 sudo dnf update -y
 
 # Install nvidea drivers
-
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y
-
-
 sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
-
 sudo dnf install akmod-nvidia -y
 
 # Install Git
@@ -52,9 +48,6 @@ sudo dnf install picom -y
 # Install Rofi
 sudo dnf install rofi -y
 
-
-
-
 # Install Alacritty
 sudo dnf install alacritty -y
 
@@ -73,7 +66,6 @@ wal --theme base16-unikitty
 sudo dnf install feh -y
 
 # Install Qutebrowser
-
 sudo dnf install qutebrowser -y
 
 # Install ranger
