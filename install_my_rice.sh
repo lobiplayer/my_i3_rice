@@ -80,6 +80,8 @@ sudo chmod +x ~/.config/lf/lf_kitty_{clean,preview}
 sudo dnf install maim -y
 sudo dnf install xclip -y
 
+sudo dnf install tmux -y
+
 ################### FISH #############################
 
 # Install Fish
