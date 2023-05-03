@@ -82,6 +82,10 @@ sudo dnf install xclip -y
 
 sudo dnf install tmux -y
 
+# Install Tmux and Tmux plugin manager
+dnf install tmux -y
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 ################### FISH #############################
 
 # Install Fish
