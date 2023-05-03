@@ -102,6 +102,7 @@ return packer.startup(function(use)
 
 	-- use("xiyaowong/transparent.nvim") -- transparent background
 
+	use("akinsho/toggleterm.nvim") -- get terminal in nvim
 	if packer_bootstrap then
 		require("packer").sync()
 	end
