@@ -36,4 +36,4 @@ rm -r ~/.config/fish -f
 ln -s ~/Projects/my_i3_rice/dotfiles/fish ~/.config/fish
 
 rm ~/.tmux.conf -f
-ln -s ~/Projects/my_i3_rice/dotfiles/.tmux.conf ~/.tmux.conf
+ln -s ~/Projects/my_i3_rice/dotfiles/tmux.conf ~/.tmux.conf
