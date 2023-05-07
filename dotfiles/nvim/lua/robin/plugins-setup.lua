@@ -105,6 +105,7 @@ return packer.startup(function(use)
 	use("lukas-reineke/indent-blankline.nvim") -- add lines for paired tags, brackets, etc.
 	use("akinsho/toggleterm.nvim") -- get terminal in nvim
 
+	use("norcalli/nvim-colorizer.lua") -- color highlighter
 	if packer_bootstrap then
 		require("packer").sync()
 	end
