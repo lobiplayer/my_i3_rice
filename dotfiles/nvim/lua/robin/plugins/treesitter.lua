@@ -32,7 +32,16 @@ treesitter.setup({
 		"vim",
 		"dockerfile",
 		"gitignore",
+		"vue",
 	},
 	-- auto install above language parsers
 	auto_install = true,
 })
+
+-- Enables folding
+local vim = vim
+local opt = vim.opt
+
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"
+opt.foldlevel = 9
