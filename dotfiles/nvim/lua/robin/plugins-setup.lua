@@ -102,6 +102,7 @@ return packer.startup(function(use)
 
 	-- use("xiyaowong/transparent.nvim") -- transparent background
 
+	use("lukas-reineke/indent-blankline.nvim") -- add lines for paired tags, brackets, etc.
 	use("akinsho/toggleterm.nvim") -- get terminal in nvim
 
 	if packer_bootstrap then
