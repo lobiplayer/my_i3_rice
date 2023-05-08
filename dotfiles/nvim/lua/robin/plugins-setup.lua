@@ -107,7 +107,7 @@ return packer.startup(function(use)
 
 	use("norcalli/nvim-colorizer.lua") -- color highlighter
 
-	use("romgrk/barbar.nvim")
+	use("akinsho/bufferline.nvim")
 	if packer_bootstrap then
 		require("packer").sync()
 	end
